@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{%  block head %}
+<title>Twig Prout!!!</title>
+{%  endblock %}
+
+{% block content %}
+    {% for product in products %}
+    <div class="col-sm-4">
+        <h3>{{ product }}</h3>
+        <p>Lorem ipsum dolor..</p>
+    </div>
+    {% endfor %}
+
+{% endblock %}
